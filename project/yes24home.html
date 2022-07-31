@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="yes24home.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">고객센터</a></li>
+            <li><a href="">주문/배송</a></li>
+            <li><a href="">카트</a></li>
+            <li><a href="">마이페이지</a></li>
+            <li><a href="">회원가입</a></li>
+            <li><a href="">로그인</a></li>
+        </ul>
+    </nav>
+    <div style="width: 80%; text-align: center;">
+        <tr>
+            <td><label for="lbladdress" class="title mpt">국내도서</label></td>
+            <td>
+                <!-- 콤보박스 : 입력 + 선택
+                     선택상자 : only 선택 -->
+                <select name="addr" id="lbladdress">
+                    <!-- value 값이 서버로 전달됩니다. -->
+                    <!-- <option value="서울"> <input type="text" placeholder="국내도서"> </option> -->
+                    <option value="서울" selected="checked">통합검색</option>
+                    <option value="서울">소설</option>
+                    <option value="인천">고전소설</option>
+                    <option value="대전">시</option>
+                    <option value="광주">수필</option>
+                </select>
+            </td>
+        </tr>
+        <input type="text" placeholder="검색어 입력"><input type="button" value="검색"/>
+    </div>
+</body>
+</html>
